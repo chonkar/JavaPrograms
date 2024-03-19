@@ -2,21 +2,20 @@
 public class firstCharacterOfEachWord {
 
 	public static void main(String[] args) {
-		
-		String s= "In the Box";
-		String w="";
-		s+=' ';
-		for(int i=0;i<=s.length()-1;i++) {
-			char c=s.charAt(i);
-			if(c!=' ') {
-				w=w+c;
-			}
-			else {
-				
-				System.out.println(w.charAt(0));
-				w="";
+		String sen= "I am in the box ";
+		String word=" ";
+		//sen+=" ";
+		for(int i=0; i<=sen.length()-1;i++) {
+			char cha= sen.charAt(i);
+			if(cha!= ' ') {
+				word= word+cha;
+				//System.out.println(word);
 			}
 			
+			else {
+				System.out.println(word.charAt(0));
+				word= "";
+			}
 		}
 
 	}

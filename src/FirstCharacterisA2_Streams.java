@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.Stream;
 
 public class FirstCharacterisA2_Streams {
 
@@ -20,7 +21,18 @@ public class FirstCharacterisA2_Streams {
 		}
 		 
 		System.out.println(count);
+		
+		Stream.of("Anoop","Pooja","Asha","Ankita","Bob").filter(s->s.startsWith("A")).count();
 
+		long d=Stream.of("Anoop","Pooja","Asha","Ankita","Bob").filter(s->
+		{
+			s.startsWith("A");
+			return true;
+		}).count();
+		
+		System.out.println(d);
 	}
+	
+
 
 }
